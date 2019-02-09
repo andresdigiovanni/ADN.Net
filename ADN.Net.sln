@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADN.Net", "ADN.Net\ADN.Net.csproj", "{FEFFB27F-74CD-4C50-85C7-277CE9656B7E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADN.Net", "src\ADN.Net\ADN.Net.csproj", "{FEFFB27F-74CD-4C50-85C7-277CE9656B7E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F217CA69-E42E-4867-BA74-F6AC8CAEEC90}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1AB6A2A9-9919-4CA0-9A8C-8ACC64C2CAFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADN.Net.Tests", "tests\ADN.Net.Tests\ADN.Net.Tests.csproj", "{6CA30619-E522-4729-A86C-C430112FE6E5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +21,17 @@ Global
 		{FEFFB27F-74CD-4C50-85C7-277CE9656B7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEFFB27F-74CD-4C50-85C7-277CE9656B7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEFFB27F-74CD-4C50-85C7-277CE9656B7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6CA30619-E522-4729-A86C-C430112FE6E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6CA30619-E522-4729-A86C-C430112FE6E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6CA30619-E522-4729-A86C-C430112FE6E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6CA30619-E522-4729-A86C-C430112FE6E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEFFB27F-74CD-4C50-85C7-277CE9656B7E} = {F217CA69-E42E-4867-BA74-F6AC8CAEEC90}
+		{6CA30619-E522-4729-A86C-C430112FE6E5} = {1AB6A2A9-9919-4CA0-9A8C-8ACC64C2CAFE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {4D5F0FEE-3073-41D6-84E6-0E5E438D7075}

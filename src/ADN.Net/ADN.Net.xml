@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ADN.Net</name>
+    </assembly>
+    <members>
+        <member name="T:ADN.Net.IPAddressExtensions">
+            <summary>
+            A static class of extension methods for <see cref="T:System.Net.IPAddress"/>.
+            </summary>
+        </member>
+        <member name="M:ADN.Net.IPAddressExtensions.GetBroadcastAddress(System.Net.IPAddress,System.Net.IPAddress)">
+            <summary>
+            Get broadcast address of the specific IP address.
+            </summary>
+            <param name="ipAddress">IP address.</param>
+            <param name="subnetMask">Subnet mask of the target IP address.</param>
+            <returns>Broadcast address.</returns>
+            <example>
+            <code lang="csharp">
+            var ipAddress = IPAddress.Parse("192.168.1.101");
+            var subnetMask = IPAddress.Parse("255.255.255.0");
+            
+            var result = ipAddress
+                .GetBroadcastAddress(subnetMask)
+                .ToString();
+            
+            /*
+            result is "192.168.1.255"
+            */
+            </code>
+            </example>
+        </member>
+        <member name="M:ADN.Net.IPAddressExtensions.GetNetworkAddress(System.Net.IPAddress,System.Net.IPAddress)">
+            <summary>
+            Get network address of the specific IP address.
+            </summary>
+            <param name="ipAddress">IP address.</param>
+            <param name="subnetMask">Subnet mask of the target IP address.</param>
+            <returns>Network address.</returns>
+            <example>
+            <code lang="csharp">
+            var ipAddress = IPAddress.Parse("192.168.1.101");
+            var subnetMask = IPAddress.Parse("255.255.255.0");
+            
+            var result = ipAddress
+                .GetNetworkAddress(subnetMask)
+                .ToString();
+            
+            /*
+            result is "192.168.1.0"
+            */
+            </code>
+            </example>
+        </member>
+        <member name="M:ADN.Net.IPAddressExtensions.GetSubnetMask(System.Net.IPAddress)">
+            <summary>
+            Get subnet mask of the specific IP address.
+            </summary>
+            <param name="ipAddress">IP address.</param>
+            <returns>Subnet mask.</returns>
+            <example>
+            <code lang="csharp">
+            var ipAddress = IPAddress.Parse("192.168.1.101");
+            
+            var result = ipAddress.GetSubnetMask();
+            </code>
+            </example>
+        </member>
+        <member name="M:ADN.Net.IPAddressExtensions.IsInSameSubnet(System.Net.IPAddress,System.Net.IPAddress,System.Net.IPAddress)">
+            <summary>
+            Check if two IP addresses are in the same subnet.
+            </summary>
+            <param name="address2">IP address 2.</param>
+            <param name="address">IP address.</param>
+            <param name="subnetMask">Subnet mask of the target IP address.</param>
+            <returns>True if the two IP addresses are in the same subnet, false otherwise.</returns>
+            <example>
+            <code lang="csharp">
+            var ipAddress = IPAddress.Parse("192.168.1.101");
+            var ipAddress2 = IPAddress.Parse("192.168.1.102");
+            var subnetMask = IPAddress.Parse("255.255.255.0");
+            
+            var result = ipAddress
+                .IsInSameSubnet(ipAddress2, subnetMask)
+                .ToString();
+            
+            /*
+            result is true.
+            */
+            </code>
+            </example>
+        </member>
+        <member name="T:ADN.Net.IPAddressHelper">
+            <summary>
+            Class to calculate filtered values.
+            </summary>
+        </member>
+        <member name="M:ADN.Net.IPAddressHelper.GetLocalIPAddresses">
+            <summary>
+            Get all local IP addresses.
+            </summary>
+            <returns>All local IP addresses.</returns>
+            <example>
+            <code lang="csharp">
+            IPAddress[] result = IPAddressHelper.GetLocalIPAddresses();
+            </code>
+            </example>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,9 @@
+language: csharp
+solution: ADN.Net.sln
+mono: latest
+dotnet: 2.0.0
+script:
+  - dotnet restore
+  - dotnet build ./src/ADN.Net/
+  - dotnet build ./tests/ADN.Net.Tests/
+  - dotnet test ./tests/ADN.Net.Tests/
