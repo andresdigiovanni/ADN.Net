@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <ProjectGuid>{FEFFB27F-74CD-4C50-85C7-277CE9656B7E}</ProjectGuid>
     <Version>1.0.0</Version>
     <Title>ADN.Net</Title>
     <Authors>Andrés Di Giovanni</Authors>

@@ -5,6 +5,8 @@ ADN.Net is a cross-platform open-source library which provides net utilities to 
 [![Build Status](https://travis-ci.org/andresdigiovanni/ADN.Net.svg?branch=master)](https://travis-ci.org/andresdigiovanni/ADN.Net)
 [![NuGet](https://img.shields.io/nuget/v/ADN.Net.svg)](https://www.nuget.org/packages/ADN.Net/)
 [![BCH compliance](https://bettercodehub.com/edge/badge/andresdigiovanni/ADN.Net?branch=master)](https://bettercodehub.com/)
+[![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=andresdigiovanni_ADN.Net&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=andresdigiovanni_ADN.Net)
+[![Quality](https://sonarcloud.io/api/project_badges/measure?project=andresdigiovanni_ADN.Net&metric=alert_status)](https://sonarcloud.io/dashboard?id=andresdigiovanni_ADN.Net)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Installation
