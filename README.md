@@ -9,6 +9,14 @@ ADN.Net is a cross-platform open-source library which provides net utilities to 
 [![Quality](https://sonarcloud.io/api/project_badges/measure?project=andresdigiovanni_ADN.Net&metric=alert_status)](https://sonarcloud.io/dashboard?id=andresdigiovanni_ADN.Net)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
+## Basic usage
+
+Example get all local IP addresses:
+
+```csharp
+IPAddress[] result = IPAddressHelper.GetLocalIPAddresses();
+```
+
 ## Installation
 
 ADN.Net runs on Windows, Linux, and macOS.
